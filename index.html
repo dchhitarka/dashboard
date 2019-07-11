@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1">
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="main.css">
+		<script src="https://kit.fontawesome.com/486392b9f0.js"></script>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="menu_icon">
+				<i class="fas fa-bars"></i>	
+			</div>
+
+			<header class="header">
+				<div class="header_search">
+					<input type="search" placeholder="Search..." id="searchbox">
+				</div>
+				<div class="header_avatar">Your Face</div>
+			</header>
+			
+			<aside class="sidenav">
+				<div class="sidenav_close-icon">
+					<i class="fas fa-times"></i>
+				</div>
+				<ul class="sidenav_list">
+					<li class="sidenav_listitem">Item 1</li>
+					<li class="sidenav_listitem">Item 2</li>
+					<li class="sidenav_listitem">Item 3</li>
+					<li class="sidenav_listitem">Item 4</li>
+					<li class="sidenav_listitem">Item 5</li>
+				</ul>	
+			</aside>
+			
+			<main class="main">
+				<div class="main_header">
+					<div class="main_header_heading">Hello {User}</div>
+					<div class="main_header_updates">Recent Items</div>
+				</div>
+
+				<div class="main_overview">
+					<div class="overviewcard">
+						<div class="ovc_icon">Overview</div>
+						<div class="ovc_info">Info</div>
+					</div>
+					<div class="overviewcard">
+						<div class="ovc_icon">Overview</div>
+						<div class="ovc_info">Info</div>
+					</div>
+					<div class="overviewcard">
+						<div class="ovc_icon">Overview</div>
+						<div class="ovc_info">Info</div>
+					</div>
+					<div class="overviewcard">
+						<div class="ovc_icon">Overview</div>
+						<div class="ovc_info">Info</div>
+					</div>
+				</div>
+
+				<div class="main_card">
+					<div class="card">Card</div>
+					<div class="card">Card</div>
+					<div class="card">Card</div>
+				</div>
+			</main>
+			
+			<footer class="footer">
+				<div class="footer_crights">&copy; 2019 DC</div>
+				<div class="footer_signature">Made with love by Deepak Chhitarka</div>
+			</footer>
+
+			<script>
+				const menuIcon = document.querySelector('.menu_icon');
+				const sideNav = document.querySelector('.sidenav');
+				const closeIcon = document.querySelector('.sidenav_close-icon');
+				
+				menuIcon.addEventListener('click', ()=>{
+					sideNav.classList.add('active');
+				});
+				
+				closeIcon.addEventListener('click', ()=>{
+					sideNav.classList.remove('active');
+				});					
+			</script>
+		</div>
+	</body>
+</html>
